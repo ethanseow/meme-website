@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel = 'stylesheet' type = 'text/css' href = 'styles/headerStyle.css'>
+        <link rel = 'stylesheet' type = 'text/css' href = 'styles/imgStyle.css'>
+        <style>
+            form{
+                margin:auto;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <%- include('partials/header.ejs') %>
+        <br>
+        <form>
+            <label for = "subreddit">Subreddit</label>
+            <input type = "text" id = "subreddit" name = "subreddit">
+            <input type = "submit" value="Submit">
+        </form>
+        <br>
+        <div>
+            <% for(var i = 0;i<jsonData.length; i++){ %>
+                <img src = <%= jsonData[i] %> >
+                <br>
+            <% } %>
+        </div>
+    </body>
+</html>

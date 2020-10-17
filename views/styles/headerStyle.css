@@ -1,0 +1,39 @@
+body{
+    background-color: lightpink;
+    background-attachment: fixed;
+    background-size: 100% 110%;
+    padding:0px;
+    margin:0px;
+}
+#partialHeader{
+    font-family:"Lucida Console", Courier, monospace;
+    text-align: center;
+    font-size:10px;
+}
+#partialHeader .links{
+    display:inline-block;
+    width:10%;
+    padding:0 6.5% 0 6.5%;
+    background-color: whitesmoke;
+}
+#partialHeader .links a{
+    color: black;
+    font-size:30px;
+    text-decoration: none;
+}
+#partialHeader h1 a{
+    color:black;
+    font-size:48px; 
+    margin:auto;
+    width: max-content;
+    background-color: whitesmoke;
+    text-decoration: none;
+}
+#text{
+    margin: auto;
+    color:white;
+    font-family:"Lucida Console", Courier, monospace;
+    font-size:35px;
+    background-color: black;
+    width:max-content;
+}

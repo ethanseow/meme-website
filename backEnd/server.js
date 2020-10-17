@@ -44,7 +44,7 @@ const getHttp = function(url){
     });
 }
 
-app.listen(3000);
+app.listen(process.env.PORT || 5000);
 
 app.get('/',(req,res)=>{
     res.render('index.ejs');

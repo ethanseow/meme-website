@@ -4,9 +4,8 @@ const mongoose = require('mongoose');
 const http = require('https');
 var path = require('path');
 
-app.set('views', '../views');
 app.set('view engine', 'ejs');
-app.use('/styles',express.static('../views/styles'));
+app.use('/styles',express.static('views/styles'));
 var jsonData;
 const getHttp = function(url){
     return new Promise( (resolve,reject) =>{
@@ -44,7 +43,7 @@ const getHttp = function(url){
     });
 }
 
-app.listen(process.env.PORT || 5000);
+app.listen(3000);
 
 app.get('/',(req,res)=>{
     res.render('index.ejs');
